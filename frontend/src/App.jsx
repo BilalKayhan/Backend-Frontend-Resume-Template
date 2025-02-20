@@ -1,11 +1,11 @@
-// import './App.css'
+import SiteRoutes from "./components/SiteRoutes"
 
 function App() {
   
 
   return (
     <>
-      <h1>Resume App</h1>
+      <SiteRoutes/>
     </>
   )
 }
