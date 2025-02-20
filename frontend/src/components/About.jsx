@@ -10,7 +10,7 @@ function About() {
             {
                 about.map(abouts => <div key={abouts._id} className="mb-0">
                     <h1>{abouts.surname}
-                    <span className="text-primary">{abouts.name}</span>
+                    <span className="text-primary"> {abouts.name}</span>
                     </h1>
                     <div className="subheading mb-5">
                         {abouts.address}

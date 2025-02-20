@@ -4,13 +4,19 @@ import { BrowserRouter } from "react-router-dom"
 // import './index.css'
 import App from './App.jsx'
 import { AboutContextProvider } from './contexts/AboutContext.jsx'
+import { NavbarContextProvider } from './contexts/NavbarContext.jsx'
+import { ExperienceContextProvider } from './contexts/ExperienceContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AboutContextProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </AboutContextProvider>
+    <ExperienceContextProvider>
+      <NavbarContextProvider>
+        <AboutContextProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </AboutContextProvider>
+      </NavbarContextProvider>
+    </ExperienceContextProvider>
   </StrictMode>,
 )
