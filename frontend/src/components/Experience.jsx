@@ -20,6 +20,7 @@ function Experience() {
         }
     </div>
     </section>
+    <hr className="m-0" />
     </>
   )
 }

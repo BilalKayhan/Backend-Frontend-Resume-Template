@@ -31,18 +31,20 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-            {
-                navbar.map(navbars => <div key={navbars._id} className="collapse navbar-collapse" id="navbarResponsive" >
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll-trigger" href="#about">
-                                {navbars.name}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                )
-            }
+        <div className="collapse navbar-collapse" id="navbarResponsive" >
+        <ul className="navbar-nav">
+          {
+            navbar.map(navbars => 
+              
+              <li key={navbars._id} className="nav-item">
+                          <a className="nav-link js-scroll-trigger" href="#about">
+                              {navbars.name}
+                          </a>
+                      </li>
+              
+          )}
+        </ul>
+        </div>
       </nav>
     </>
   );

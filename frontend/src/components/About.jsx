@@ -37,6 +37,7 @@ function About() {
             </div>
         </div>
       </section>
+      <hr className="m-0" />
     </>
   );
 }
